@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | Fitwyse</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="signup-box">
+      <h2>Sign Up</h2>
+      <p class="subtitle">Create a new Fitwyse account</p>
+      
+      <form id="signup-form">
+        <label>Email address</label>
+        <input type="email" placeholder="Ex:abc123@gmail.com" required />
+
+        <label>Password</label>
+        <div class="password-field">
+          <input type="password" id="password" placeholder="Min 6 characters" required minlength="6" />
+          <span class="toggle" onclick="toggleVisibility('password')">👁️</span>
+        </div>
+
+        <label>Confirm password</label>
+        <div class="password-field">
+          <input type="password" id="confirm-password" placeholder="As same as the set password" required />
+          <span class="toggle" onclick="toggleVisibility('confirm-password')">👁️</span>
+        </div>
+
+        <label>Username</label>
+        <input type="text" placeholder="Enter username" required />
+
+        <div class="terms">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">By signing up, you agree to the Fitwyse <a href="#">Terms of service & privacy policy</a></label>
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+
+        <div class="or">- Or -</div>
+
+        <button type="button" class="google-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" />
+          Sign Up with Google
+        </button>
+
+        <p class="signin-link">Already have account? <a href="#">sign in</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
